@@ -43,7 +43,7 @@ public class A_Break {
 		}
 	}
 	
-	public void method3() { // 이거 에러나는데 코드 확인하기 }}
+	public void method3() {
 		//매번 반복적으로 사용자에게 양수를 입력받아 1 ~ 사용자가 입력한 수까지 출력
 		//단, 정상적으로 양수를 입력했을시 1 ~ 사용자가 입력한 수까지 출력을하고 종료
 		
@@ -54,14 +54,15 @@ public class A_Break {
 			int num = sc.nextInt();
 			
 			if(num > 0) {// 양수로 제대로 입력한 경우 -> 1~num 출력 후 종료
+				for(int i = 1; i <=  num; i++) {
 				System.out.print(i + " ");
 				}
-				break
+				break;
 			}else { //잘못 입력시 -> 다시 입력하라는 출력문
 				System.out.println("잘못 입력했습니다. 다시입력해주세요.");
 			}	
 			
-		}
 	}
+	
 
 }
