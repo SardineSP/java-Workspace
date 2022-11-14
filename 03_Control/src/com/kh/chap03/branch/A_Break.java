@@ -61,7 +61,7 @@ public class A_Break {
 			}else { //잘못 입력시 -> 다시 입력하라는 출력문
 				System.out.println("잘못 입력했습니다. 다시입력해주세요.");
 			}	
-			
+		}	
 	}
 	
 

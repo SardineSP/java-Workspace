@@ -233,53 +233,53 @@ public class LoopPractice {
 			}				
 	}
 	
-	public void practice14() { // 해답지 보고 제대로 공부하기
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("숫자 : ");
-		int num = sc.nextInt();
-		
-		if(num < 2) {
-			System.out.println("잘못 입력하셨습니다.");
-			return;
-		}
-		int count = 0;
-		for(int =2; i <= num; i++) {
-			boolean isPrime = true;
-			//i값이 소수인지 아닌지 검사를 함.
-			for(int j = 2; j < i; j++) {
-				if(i % j ==0) {
-					isPrime = false;
-				}
-			}
-			
-			if(isPrime == true) {
-				System.out.print(i + " ");
-				count++;
-			}
-			//i값이 소수라면 출력, 값을 1 증가
-		}
-		
-		
-		
-		System.out.printf("2부터 %d까지의 소수의 개수는 %d개입니다.", num, count);
-	}
-	
-	public void practice18() { //이건 그냥 삼각형 + 역삼각형 구조로 만들었네?
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("정수 입력 : ");
-		int num = sc.nextInt();
-		
-		for(int j = 0; j < 2; j++) {
-			System.out.print(" ");
-		}
-		for(int j = 0; j < 1; j++) {
-			System.out.print("*");
-		}
-		System.out.println();
-		
-		
-	}
-	
+//	public void practice14() { // 해답지 보고 제대로 공부하기
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("숫자 : ");
+//		int num = sc.nextInt();
+//		
+//		if(num < 2) {
+//			System.out.println("잘못 입력하셨습니다.");
+//			return;
+//		}
+//		int count = 0;
+//		for(int =2; i <= num; i++) {
+//			boolean isPrime = true;
+//			//i값이 소수인지 아닌지 검사를 함.
+//			for(int j = 2; j < i; j++) {
+//				if(i % j ==0) {
+//					isPrime = false;
+//				}
+//			}
+//			
+//			if(isPrime == true) {
+//				System.out.print(i + " ");
+//				count++;
+//			}
+////			//i값이 소수라면 출력, 값을 1 증가
+////		}
+////		
+//		
+//		
+//		System.out.printf("2부터 %d까지의 소수의 개수는 %d개입니다.", num, count);
+//	}
+//	
+//	public void practice18() { //이건 그냥 삼각형 + 역삼각형 구조로 만들었네?
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("정수 입력 : ");
+//		int num = sc.nextInt();
+//		
+//		for(int j = 0; j < 2; j++) {
+//			System.out.print(" ");
+//		}
+//		for(int j = 0; j < 1; j++) {
+//			System.out.print("*");
+//		}
+////		System.out.println();
+////		
+//		
+//	}
+//	
 }
