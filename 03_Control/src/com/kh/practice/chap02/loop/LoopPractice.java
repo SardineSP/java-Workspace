@@ -38,7 +38,6 @@ public class LoopPractice {
 	
 	public void practice3() {
 		Scanner sc = new Scanner(System.in);
-		
 //		System.out.print("정수를 하나 입력하게요 : ");
 //		int num = sc.nextInt();
 //		
@@ -48,18 +47,22 @@ public class LoopPractice {
 //				sum = num + i;
 //		}
 //		System.out.print(" = " + sum);
-		
+
 		System.out.print("정수를 하나 입력하게요 : ");
 		int num = sc.nextInt();
 		
 		int sum = 0;
 		for(int i = 1; i <= num; i++) {
+
 			if(i == num) {
 				System.out.print(i);
 				sum += i;
 			}else {
 				System.out.print(i + " + ");
 			}
+			
+				System.out.print(i + " + ");
+				sum = num + i; // 되긴 했는데 왜 이게 num + i가 될까????
 		}
 		System.out.print(" = " + sum);
 	}
@@ -72,7 +75,7 @@ public class LoopPractice {
 		
 		System.out.print("두 번째 숫자 : ");
 		int num2 = sc.nextInt();
-	
+
 		if(num1 >= 1 && num2 >= 1) { // 좀 더 간소화 할 수 있을 것 같은데...
 			if(num1 >= num2){
 				for(int i = num2 + 1; i < num1; i++) {
@@ -120,17 +123,25 @@ public class LoopPractice {
 		
 		int sum = start;
 		
+
 		for(int i = 1; i <= 10; i++) {
 			System.out.print(sum + " ");
 			sum = start + (blank*i);
 		}
 		//System.out.print(start + " ");
 		//start += blank;
+
+		for(int i = 1; i <= 10; i ++) {
+			System.out.print(sum + " ");
+			sum = start + (blank*i);
+		}
+
 				
 	}
 	
 	public void practice8() {
 		Scanner sc = new Scanner(System.in);
+
 		
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
@@ -141,10 +152,14 @@ public class LoopPractice {
 			}
 			System.out.println();
 		}
+
+				
+
 	}
 	
 	public void practice9() {
 		Scanner sc = new Scanner(System.in);
+
 		
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
@@ -181,10 +196,14 @@ public class LoopPractice {
 				}
 				System.out.println();
 			}	
+
+				
 	}
+
 	
 	public void practice11() {
 		Scanner sc = new Scanner(System.in);
+
 		
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
@@ -199,11 +218,14 @@ public class LoopPractice {
 				}
 				System.out.println();
 			}	
+
+
 				
 	}
 	
 	public void practice12() {
 		Scanner sc = new Scanner(System.in);
+
 		
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
@@ -230,8 +252,11 @@ public class LoopPractice {
 					System.out.print("*");
 				}
 				System.out.println();
-			}				
+		}
 	}
+}
+	
+
 	
 //	public void practice14() { // 해답지 보고 제대로 공부하기
 //		Scanner sc = new Scanner(System.in);
@@ -282,4 +307,4 @@ public class LoopPractice {
 //		
 //	}
 //	
-}
+
