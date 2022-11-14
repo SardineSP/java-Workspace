@@ -11,7 +11,7 @@ public class Run {
 		//lp.practice4();
 		//lp.practice5();
 		//lp.practice6();
-		lp.practice8();
+		//lp.practice8();
 		//lp.practice9();
 		//lp.practice10();
 		//lp.practice11();
