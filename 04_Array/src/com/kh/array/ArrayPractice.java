@@ -83,4 +83,93 @@ public class ArrayPractice {
 				
 	}
 
+	
+	public void practice6() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("0~6 사이 숫자 입력 : ");
+		int num = sc.nextInt();
+		
+		String[] day = {"월", "화", "수", "목", "금", "토", "일"};
+		
+		if(num <= 6) {
+			for(int i = 0; i < 6; i++) {
+				if(i == num) {
+					System.out.print(day[i]);
+				}
+			}
+		}else {
+			System.out.print("잘못 입력하셨습니다.");
+		}
+	}
+	
+	public void practice7() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 : ");
+		int num = sc.nextInt();
+		
+		int arr[] = new int[num];
+		int sum = 0;
+		
+		for(int i = 0; i < num; i++) {
+			System.out.printf("배열 %d번째 인덱스에 넣을 값 : ", i);
+			int score = sc.nextInt();
+			arr[i] = score;
+			sum += score;
+		}
+		for(int i = 0; i < num; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+		System.out.printf("총합 : %d", sum);
+	}
+	
+	public void practice8() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 : ");
+		int num = sc.nextInt();
+		
+		int[] arr = new int[num];
+		
+		if(num % 2 == 1 && num >= 3) {
+			for(int i = 0; i <= num / 2; i++) {
+				if( i <= num / 2 ) {
+					arr[i] = i + 1;
+					System.out.print(arr[i] + ", ");
+				}else { // 이부분 식이 맞는 것 같은데 출력이 안되는 이유를 모르겠음...
+					arr[i] = (num - i);
+					System.out.print(arr[i] + ", ");
+				}
+			}
+		}else {
+			System.out.println("다시 입력하세요");
+			practice8();
+		}
+	}
+	
+	public void practice9() {
+		Scanner sc = new Scanner(System.in); 
+		
+		System.out.print("치킨 이름을 입력하세요 : ");
+		String name = sc.nextLine();
+		
+		String[] chicken = {"양념", "간장", "후라이드"};
+		
+		int correct = 0;
+		for(int i = 0; i < 3; i++) { // 이부분 식이 맞는 것 같은데 출력이 안되는 이유를 모르겠음...
+			if(name.equals(chicken[i])) {
+				correct = i;
+				System.out.println(correct);
+				
+			}else {
+				System.out.println("no");
+			}
+		}
+		
+	}
+
+
+
+
 }
