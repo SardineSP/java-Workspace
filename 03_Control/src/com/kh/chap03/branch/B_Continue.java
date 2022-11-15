@@ -61,9 +61,9 @@ public class B_Continue {
 			if(i % 4 == 0) {
 				continue; //continue문 안에 뭘 넣으면 안되나? unreachable code?
 				}
-			System.out.printf("==== %d단 ====\n", i);
-			for(int j = 1; j <= 9; j++) {
-				System.out.printf("%d x %d = %d\n", i, j, (i*j));
+				System.out.printf("==== %d단 ====\n", i);
+				for(int j = 1; j <= 9; j++) {
+					System.out.printf("%d x %d = %d\n", i, j, (i*j));
 				}
 				System.out.println();
 		}
