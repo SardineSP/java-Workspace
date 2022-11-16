@@ -112,7 +112,7 @@ public class DimensionPractice {
 		}
 	}
 	
-	public void practice7() { //?????
+	public void practice7() { ////////
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("행의 크기 : ");
