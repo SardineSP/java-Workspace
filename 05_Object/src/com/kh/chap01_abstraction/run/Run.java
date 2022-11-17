@@ -81,8 +81,18 @@ public class Run {
 		
 		
 		// xxx님의 나이는 xx살이고, 키는 xx.xcm입니다.
-		System.out.println(A.name + "님의 나이는 " + A.age + "살이고, 키는 " + A.height + "cm");
+		System.out.println(A.name + "님의 나이는 " + A.age + "살이고, 키는 " + A.height + "cm입니다.");
 		System.out.printf("%s님의 나이는 %d살이고, 키는 %.1fcm입니다.", A.name, A.age, A.height);
+		
+		/*
+		 * 필드 public으로 작성시 
+		 * => 직접적으로 접근해서 값 대입 및 조회할 경우 보안문제가 생길 수 있다.
+		 * => 외부에서 함부로 값을 변질시키거나 조회권한이 없는 사람이 값을 쉽게 가져올 수 있는 문제 발생
+		 * >>> 캡슐화로 해결
+		 * 객체지향의 설계원칙중 하나가 바로 정보은닉이며 그 기술 중 하나가 바로 캡슐화
+		 * 
+		 * 
+		 */
 	}
 
 }
