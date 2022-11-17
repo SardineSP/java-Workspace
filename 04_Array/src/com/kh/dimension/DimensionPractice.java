@@ -1,6 +1,7 @@
 package com.kh.dimension;
 
 import java.util.Scanner;
+import com.kh.practice.run.*;
 
 public class DimensionPractice {
 	public void practice1() {
@@ -9,9 +10,9 @@ public class DimensionPractice {
 		String value = "";
 		for(int i = 0; i < arr.length; i++ ) {
 			for(int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = value;
-				value = value + 1;
-				System.out.printf("(%s, %s)\t", i, j);
+//				arr[i][j] = value; // 이미 행열 정보는 i, j가 가지고 있음!
+//				value = value + 1;
+				System.out.printf("(%d, %d)\t", i, j);
 			}
 			System.out.println();
 		}
@@ -23,8 +24,7 @@ public class DimensionPractice {
 		int value = 1;
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = value;
-				value++;
+				arr[i][j] = value++;
 				System.out.printf("%3d", arr[i][j]);
 			}
 			System.out.println();
@@ -37,8 +37,7 @@ public class DimensionPractice {
 		int num = 0;
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = 16 - num;
-				num++;
+				arr[i][j] = 16 - num++;
 				System.out.printf("%3d", arr[i][j]);
 			}
 			System.out.println();
@@ -49,30 +48,50 @@ public class DimensionPractice {
 		int [][] arr = new int [4][4];
 		
 		int sum = 0;
-		
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				if(i < 3 && j < 2) {
-					arr[i][j] = (int)((Math.random()*10)+1) ;
-					sum += arr[i][j] ;
-				}
-				if(i == 3) {
-					for(j = 0; j <arr[3].length; j++) {
-						arr[3][j] = sum; 
-					}
-				}
+		for(int i = 0; i < arr.length -1 ; i++) {
+			for(int j = 0; j < arr[i].length -1; j++) {
+				arr[i][j] = (int)((Math.random()*10)+1) ;
 				
+				arr[i][3] += arr[i][j]; //각 행의 모든 값의 합
+				arr[3][j] += arr[i][j]; //각 열의 모든 값의 합
+				arr[3][3] += arr[i][j]*2; //가로세로의 총합
 			}
+		
+		
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				if(i < 3 && j < 2) {
+//					arr[i][j] = (int)((Math.random()*10)+1) ;
+//					sum += arr[i][j] ;
+//				}
+//				if(i == 3) {
+//					for(j = 0; j <arr[3].length; j++) {
+//						arr[3][j] = sum; 
+//					}
+//				}
+//				
+//			}
+//		}
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				System.out.printf("%3d", arr[i][j]);
+//			}
+//			System.out.println();
 		}
+		printArray(arr);
+		
+	}
+	public void printArray(int[][] arr) { // 출력을 메서드? 화?
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr[i].length; j++) {
-				System.out.printf("%3d", arr[i][j]);
+				System.out.printf("%4d", arr[i][j]);
 			}
 			System.out.println();
 		}
-	}
 	
-	public void practice5() {
+	}
+
+	public void practice5() { // 이거 다른 풀이는 꼭 코드 확인
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("행 크기 : ");
@@ -88,9 +107,9 @@ public class DimensionPractice {
 			
 			for(int i = 0; i < row; i++) {
 				for(int j = 0; j < column; j++) {
-						ch = (char)((Math.random()*(25))+ 65);
+						ch = (char)((Math.random()*(26))+ 65);
 						arr[i][j] = ch;
-						System.out.printf("%1c", arr[i][j]);
+						System.out.printf("%2c", arr[i][j]);
 					}
 				System.out.println();
 				}
@@ -101,8 +120,12 @@ public class DimensionPractice {
 	}
 	
 	public void practice6() {
-		String [][] strArr = new String[][] {{"이", "까", "왔", "앞", "힘"}, {"차", "지", "습", "으", "냅"}, {"원", 
-			"열", "니", "로", "시"}, {"배", "심", "다", "좀", "다"}, {"열", "히", "! ", "더", "!! "}};
+		String [][] strArr = new String[][] {
+			{"이", "까", "왔", "앞", "힘"}, 
+			{"차", "지", "습", "으", "냅"}, 
+			{"원", "열", "니", "로", "시"}, 
+			{"배", "심", "다", "좀", "다"}, 
+			{"열", "히", "! ", "더", "!! "}};
 			
 		for(int i = 0; i < strArr.length; i++) {
 			for(int j = 0; j < strArr[i].length; j++) {

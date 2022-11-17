@@ -131,6 +131,7 @@ public class C_DimensionalArray {
 		}
 		for(int i = 0; i < arr.length; i++) {
 			System.out.println(Arrays.toString(arr[i]));
+			//[1,2,3,4] 이런식으로 출력되게 됨
 		}
 	
 	}
@@ -192,34 +193,42 @@ public class C_DimensionalArray {
 		
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j <arr[i].length; j++) {
-				if(i == 0) {
-					System.out.print("국어 점수를 입력하세요 : ");
-					int score1 = sc.nextInt();
-					arr[i][j] = score1;
-				}else {
-					System.out.print("영어 점수를 입력하세요 : ");
-					int score1 = sc.nextInt();
-					arr[i][j] = score1;
-				}
+				System.out.printf("%s 점수를 입력하세요 : ", i == 0? "국어" : "영어");
+				int score1 = sc.nextInt();
+				arr[i][j] = score1;
+//				if(i == 0) { // 위와 같이 삼항연산자로 줄일 수 있음....
+//					System.out.print("국어 점수를 입력하세요 : ");
+//					int score1 = sc.nextInt();
+//					arr[i][j] = score1;
+//				}else {
+//					System.out.print("영어 점수를 입력하세요 : ");
+//					int score1 = sc.nextInt();
+//					arr[i][j] = score1;
+//				}
 			}
 		}
-		System.out.print("국어 점수 : "); // 이거 줄일 수 있을 것 같은데...
 		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				if(i == 0) {
-					System.out.print( arr[i][j] + " ");
-				}
+				System.out.printf("%s 점수 : ", i ==0 ? "국어" : "영어");
+			for(int j = 0; j <arr[i].length; j++) {
+				System.out.print(arr[i][j] + " ");
+//		System.out.print("국어 점수 : "); // 이거 줄일 수 있을 것 같은데...
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				if(i == 0) {
+//					System.out.print( arr[i][j] + " ");
+//				}
+//			}
+//		}
+//		System.out.println();
+//		
+//		System.out.print("영어 점수 : ");
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				if(i == 1) {
+//					System.out.print( arr[i][j] + " ");
+//				}
 			}
-		}
-		System.out.println();
-		
-		System.out.print("영어 점수 : ");
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				if(i == 1) {
-					System.out.print( arr[i][j] + " ");
-				}
-			}
+			System.out.println();
 		}
 	}
 	
