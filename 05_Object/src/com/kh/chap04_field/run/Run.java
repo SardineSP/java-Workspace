@@ -36,6 +36,10 @@ public class Run {
 		System.out.println(FieldTest3.NUM);
 		//FieldTest3.NUM = 99; -> 값 변경 불가.
 		
+		
+
+		
 	}
+	
 
 }

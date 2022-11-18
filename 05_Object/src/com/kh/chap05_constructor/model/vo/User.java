@@ -46,6 +46,20 @@ public class User {
 		this.userName = userName;
 	}
 	
+	public User(String userId, String userPwd, String userName, int age, char gender) {
+//		this.userId = userId; -> 코드 줄이기
+//		this.userPwd = userPwd;
+//		this.userName = userName;
+		this(userId, userPwd, userName); //이건 항상 첫줄에?
+		/*
+		 * 생성자 내부에서 생성자끼리 중복되는 코드가 있는 경우, this 생서자를 통해 같은 클래스 내에 있는 다른 생성자
+		 * 호출이 가능함. 단, 반드시 생성자 내부 첫 줄에 기술해야함.
+		 * 
+		 */
+		this.age = age;
+		this.gender = gender;
+	}
+	
 	//메서드부
 	public void setUserId(String userId) {
 		this.userId = userId;
