@@ -31,6 +31,7 @@ public class Run {
 		
 		
 		/*
+		 * =>캡슐화
 		 * 위와 같이 대입할 경우 직접 접근이 불가능해짐
 		 * 그러면 직접적인 접근을 막은경우 간접적으로나마 접근할 수 있는 방법?
 		 * setter / getter
@@ -42,7 +43,18 @@ public class Run {
 		jung.setAge(26);
 		jung.setHeight(163.6);
 		
+		System.out.println(jung.getName());
+		System.out.println(jung.getAge());
+		System.out.println(jung.getHeight());
+		
 		System.out.println(jung.information());
+		
+		Student min = new Student(); //클래스는 객체를 만들기 위한 틀이다.
+		min.setName("민영재");
+		min.setAge(26);
+		min.setHeight(176);
+		
+		System.out.println(min.information());
 	}
 
 }
