@@ -12,18 +12,14 @@ public class Lotto {
 	public Lotto() {
 
 	}
-	
-//	public void getLotto(int lotto) {
-//		this.lotto = lotto;
-//	}
-//	
-//	public int getLotto() {
-//		return lotto;
-//	}
-	
 
 	public void information() { //중복 빼기
 		for(int i = 0; i < 6; i++) {
+			for(int j = 0; j < i; j++) {
+				if(lotto[i] == lotto[j]) {
+				return;
+				}
+			}
 			System.out.print(lotto[i] + " ");
 		}
 	}
