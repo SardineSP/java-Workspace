@@ -8,24 +8,24 @@ public class Student {
 	private double height;
 	private char gender;
 	
-	{
-		grade = 0;
-		classroom = 0;
-		name = "";
-		height = 0.0;
-		gender = 0;
-	}
+	{ // 초기화 블럭 : 여기서 값을 대입
+		grade = 5;
+		classroom =9;
+		name = "이규정";
+		height = 163.6;
+		gender = '남';
+	} //static 초기화 블럭도 있음 -> static 변수 초기화할때 사용
 	
-	public Student() {
+	public Student() { //기본생성자
 			
 	}
 		
-	public Student(int grade, int classroom, String name, double height, char gender) {
-		this.grade = grade;
-		this.classroom = classroom;
-		this.name = name;
-			
-	}
+//	public Student(int grade, int classroom, String name, double height, char gender) {
+//		this.grade = grade;
+//		this.classroom = classroom;
+//		this.name = name;
+//			
+//	} => 기본생성자로 출력하랬으니 필요 없음... 애초에 없어도 출력됨
 		
 	
 	public void setGrade(int grade) {
@@ -48,7 +48,7 @@ public class Student {
 		this.gender = gender;
 	}
 	
-	public int getGrade() {
+	public int getGrade() { //void가 아닌 것들은 반드시 return으로 돌려줄 값을 작성해야함
 		return grade;	
 	}
 	
@@ -68,8 +68,8 @@ public class Student {
 		return gender;
 	}
 	
-	public String information() {
-		return grade + "학년 " + classroom + "반 " + name + "학생, 키는" + height + "cm이며 " + gender;
+	public void information() { //문제에서 반환형 void, 매개변수도 없게 작성하라고 했으므로 안에 print문을 작성
+		System.out.println(grade + "학년 " + classroom + "반 " + name + "학생, 키는" + height + "cm이며 " + gender + "자입니다.");
 	}
 
 }
