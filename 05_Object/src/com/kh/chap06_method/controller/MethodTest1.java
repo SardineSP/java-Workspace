@@ -60,4 +60,5 @@ public class MethodTest1 {
 		
 		return a * b; //return에는 산술연산자도 담기 가능
 	}
+	
 }
