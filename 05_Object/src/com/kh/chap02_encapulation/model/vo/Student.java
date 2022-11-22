@@ -1,4 +1,4 @@
-package com.kh.chap02_encapulation.model.vo;
+  package com.kh.chap02_encapulation.model.vo;
 
 public class Student {
 	//필드부
