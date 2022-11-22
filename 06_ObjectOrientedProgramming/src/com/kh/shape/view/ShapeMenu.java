@@ -56,7 +56,7 @@ public class ShapeMenu {
 			case 1: inputSize(3, 1); break;
 			case 2: inputSize(3, 2); break;
 			case 3: printInformation(3); break;
-			case 9: return;
+			case 9: System.out.println("프로그램을 종료합니다."); return;
 			default: 
 			}
 		}
@@ -78,7 +78,7 @@ public class ShapeMenu {
 			case 2: inputSize(4, 2); break;
 			case 3: inputSize(4, 3); break;
 			case 4: printInformation(4); break;
-			case 9: return;
+			case 9: System.out.println("프로그램을 종료합니다."); return;
 			default: 
 			}
 		}
@@ -101,7 +101,7 @@ public class ShapeMenu {
 		
 	}
 
-	public void inputSize(int type, int menuNum) {
+	public void inputSize(int type, int menuNum) { // 이부분 집가서 다시 잘보기
 		if(type == 3) {
 			if(menuNum == 1) {
 				System.out.println("높이 : ");

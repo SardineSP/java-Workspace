@@ -6,12 +6,12 @@ public class SquareController {
 	private Shape s = new Shape();
 	
 	public double calcPerimeter(double height, double width) {
-		s = new Shape(?, height, width); // 이거 추가?
+		s = new Shape(4, height, width); // 이거 추가?
 		return width*2 + height*2;
 	}
 	
 	public double calcArea(double height, double width) {
-		s = new Shape(?, height, width); // 이거 추가?
+		s = new Shape(4, height, width); // 이거 추가?
 		return height * width;
 	}
 	
