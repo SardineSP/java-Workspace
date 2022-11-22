@@ -11,7 +11,9 @@ public class Shape {
 	}
 	
 	public Shape(int type, double height, double width) {
-		
+		this.type = type; //이부분 작성 잊지 않기
+		this.height = height;
+		this.width = width;
 	}
 	
 	public void setType(int type) {
@@ -29,6 +31,7 @@ public class Shape {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
 	public int getType() {
 		return type;
 	}
@@ -46,7 +49,7 @@ public class Shape {
 	}
 	
 	public String information() {
-		return height + width + color;
+		return height + " " + width + " " + color;
 	}
 			
 		
