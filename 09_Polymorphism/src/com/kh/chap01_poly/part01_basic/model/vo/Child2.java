@@ -6,7 +6,6 @@ public class Child2 extends Parent{
 
 	public Child2() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Child2(int x, int y, int n) {
