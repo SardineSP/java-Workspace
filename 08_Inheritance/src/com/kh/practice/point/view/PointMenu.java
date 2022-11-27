@@ -29,7 +29,7 @@ public class PointMenu {
 	}
 	
 	public void circleMenu() {
-		System.out.println("===== 메뉴 =====");
+		System.out.println("===== 원 메뉴 =====");
 		System.out.println("1. 원 둘레");
 		System.out.println("2. 원 넓이");
 		System.out.println("9. 메인으로");
@@ -48,7 +48,7 @@ public class PointMenu {
 	}
 	
 	public void rectangleMenu() {
-		System.out.println("===== 메뉴 =====");
+		System.out.println("===== 사각형 메뉴 =====");
 		System.out.println("1. 사각형 둘레");
 		System.out.println("2. 사각형 넓이");
 		System.out.println("9. 메인으로");
