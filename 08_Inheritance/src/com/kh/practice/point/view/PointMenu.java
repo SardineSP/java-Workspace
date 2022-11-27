@@ -9,7 +9,7 @@ public class PointMenu {
 	private CircleController cc = new CircleController();
 	private RectangleController re = new RectangleController();
 	
-	public void mainMenu() {
+	public void mainMenu() { //while문(무한 반복문)으로 짰을 경우 return문으로 main menu로 호출된 곳으로 돌아갈 때, 프로그램의 흐름을 잘 파악하기
 		System.out.println("===== 메뉴 =====");
 		System.out.println("1. 원");
 		System.out.println("2. 사각형");
