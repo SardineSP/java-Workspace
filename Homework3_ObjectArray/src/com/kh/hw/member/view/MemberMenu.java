@@ -3,7 +3,7 @@ package com.kh.hw.member.view;
 import java.util.Scanner;
 import com.kh.hw.member.controller.*;
 
-public class MemberMenu {
+public class MemberMenu { //향상된 반복문 복습하고 다시 보기
 	
 	private Scanner sc = new Scanner(System.in);
 	private MemberController mc = new MemberController();
@@ -60,25 +60,28 @@ public class MemberMenu {
 	public void insertMember(){
 		System.out.println("새 회원을 등록합니다.");
 		System.out.println("아이디 : ");
-		String inputId = sc.nextLine();
+		String id = sc.nextLine();
 		
 		System.out.println("이름 : ");
-			
+		String name = sc.nextLine();
+		
 		System.out.println("비밀번호 : ");
-//			
-//		System.out.println("이메일 : ");
-//			
-//		System.out.println("성별(M/F)");
-//		char gender = sc.nextLine().charAt(0);
+		String password = sc.nextLine();
+		
+		System.out.println("이메일 : ");
+		String email = sc.nextLine();	
+		
+		System.out.println("성별(M/F)");
+		char gender = sc.nextLine().charAt(0);
 //		if(gender != 'M' || 'm' || 'F' || 'f') {
 //			System.out.println("성별을 다시 입력하세요");
 //			System.out.println("성별(M/F)");
 //			char gender = sc.nextLine().charAt(0);
 //		}
-//		System.out.println("나이 : ");
-
+		System.out.println("나이 : ");
+		int age = nextInt();
 		
-		insertMember();
+		mc.insertMember(id, name, password, email, gender, age);
 	}
 	
 	public void searchMember() {

@@ -21,7 +21,7 @@ public class MemberController {
 	
 	public boolean checkId(String inputId) {
 		for(int i = 0; i < m.length; i++) {
-			if(m[i] == mm.searchId) {
+			if(m[i] = mm.searchId) {
 				
 			}
 		}
