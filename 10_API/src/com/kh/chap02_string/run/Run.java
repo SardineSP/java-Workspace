@@ -15,7 +15,10 @@ public class Run {
 //		bsmt.method();
 		
 		C_StringTokenizerTest cstt = new C_StringTokenizerTest();
-		cstt.method();
+//		cstt.method();
+		
+		D_StringBufferAndBuilder sbab = new D_StringBufferAndBuilder();
+		sbab.method();
 		
 	}
 
