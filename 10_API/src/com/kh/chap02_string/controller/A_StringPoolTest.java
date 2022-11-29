@@ -50,7 +50,7 @@ public class A_StringPoolTest {
 		
 	}
 	
-	//불변클래스
+	//불변클래스 -> 값이 수정이되는게 아니라 새로운 주소값이 할당이 됨?
 	public void method3() {
 		String str = "Hello";
 		System.out.println(System.identityHashCode(str));
@@ -60,6 +60,13 @@ public class A_StringPoolTest {
 		
 		str += "abc"; // str = str + "abc"
 		System.out.println(System.identityHashCode(str));
+		
+		/*
+		 * 기존의 상수풀의 연결이 끊긴 문자열들은 가비지콜렉터가 알아서 정리해줌
+		 * 불변이라고 해서 수정이 아예 안되는게 아니라
+		 * 기존의 그 자리(원래 있던 주소값)에서 수정되는 개념이 아니라는 것.
+		 * 매번 새로운 주소값을 참조하게됨. 
+		 */
 	}
 	
 	
