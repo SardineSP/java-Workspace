@@ -1,4 +1,4 @@
-package com.kh.chap01_poly.part02_abstractAndInterface.run;
+package com.kh.chap01_poly.part02_abstractAndInterface.part01_basic.run;
 
 import com.kh.chap01_poly.part02_abstractAndInterface.part01_basic.model.vo.*;
 
@@ -22,7 +22,7 @@ public class Run {
 		 * 추상클래스
 		 * - 미완성된 클래스 abstract class
 		 * - 객체생성 불가. (단, 레퍼런스 변수로는 선언 가능)
-		 * - 추상 메서드가 존재하는 순간 반드시 추상클래스로 정의
+		 * - 추상메서드가 존재하는 순간 반드시 추상클래스로 정의
 		 * 	(일반 필드 + 일반 메서드 + [추상메서드(생략가능)]
 		 * 
 		 * 	단, 추상메서드가 굳이 없어도 추상클래스로 둘 수 있긴 함.
