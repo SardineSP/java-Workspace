@@ -7,12 +7,21 @@ public class PhoneController {
 	private String[] result = new String[2];
 	
 	public String[] method() {
-		result[0] = new GalaxyNote9();
-		result[1] = new V40();
+		Phone[] phones = new Phone[2]; //객체배열
+		phones[0] = new GalaxyNote9();
+		phones[1] = new V40();
 		
-		for(int i = 0; i < result.length; i++) {
-			Phone.print
+		int count = 0; //여기부터 이해 잘 안감
+		for(Phone phone : phones) {
+			if(phone instanceof V40){
+				result[count++] = ((V40)phone).printInformation();
+			}else {
+				result[count++] = ((GalaxyNote9)phone).printInformation();
+			}
+			
 		}
-				
+		return result;
+		
+		
 	}
 }
