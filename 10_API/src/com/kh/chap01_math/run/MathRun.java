@@ -41,6 +41,17 @@ public class MathRun {
 		
 		//제곱 => Math.pow(double, double) : 반환값 double
 		System.out.println("2의 10제곱 : " + Math.pow(2, 10));
+		
+		/*
+		 * java.lang.Math 클래스의 특징
+		 * - 모든 필드 => 상수필드
+		 * - 모든 메서드 => static 메서드
+		 *  
+		 * 모든게 다 static이기 때문에 Math.필드 or Math.메서드명으로 다 접근 가능(객체생성할 필요가 없음)
+		 * Math 클래스의 생성자가 private이다. (객체생성불가)
+		 * 
+		 * 
+		 */
 	}
 
 }
