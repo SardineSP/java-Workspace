@@ -51,7 +51,7 @@ public class B_StringMethodTest {
 		char[] arr = str1.toCharArray();
 		System.out.println(arr[0]);
 		
-		//9.static valueOf(char[] data) : String
+		//9.static valueOf(char[] data) : String => 매개변수로 받아온 값을 String 값으로 만들어줌?
 		System.out.println(String.valueOf(arr));
 		
 		
