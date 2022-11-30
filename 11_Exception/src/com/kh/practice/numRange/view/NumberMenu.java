@@ -19,6 +19,5 @@ public class NumberMenu {
 		
 		System.out.printf("%d은(는) %d의 배수인가 ? %s", num1, num2, nc.checkDouble(num1, num2));
 
-		
 	}
 }
