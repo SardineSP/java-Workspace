@@ -17,11 +17,8 @@ public class NumberMenu {
 		System.out.print("정수2 : ");
 		int num2 = sc.nextInt();
 		
-//		try {
-//			nc.checkDouble(num1, num2);
-//		}catch(IOException e) {
-//			
-//		}
+		System.out.printf("%d은(는) %d의 배수인가 ? %s", num1, num2, nc.checkDouble(num1, num2));
+
 		
 	}
 }
