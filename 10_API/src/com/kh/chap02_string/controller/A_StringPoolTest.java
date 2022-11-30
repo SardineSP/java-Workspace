@@ -4,7 +4,7 @@ package com.kh.chap02_string.controller;
 	// 수정하는 순간 기존의 값이 담겨있는 공간에서 수정되지 않음.
 public class A_StringPoolTest {
 
-	// 생성자를 통해 문자열 담기
+	// 생성자를 통해 문자열 담기 (객체를 대입)
 	public void method1() {
 		
 		String str1 = new String("Hello");
@@ -32,9 +32,9 @@ public class A_StringPoolTest {
 		
 		String str = new String("Hello");
 		
-		//리터럴값이 상수풀에 올라감.
+		//리터럴값이 상수풀에 올라감. ->StringPool
 		String str1 = "Hello";
-		String str2 = "Hello";
+		String str2 = "Hello"; // => 새롭게 할당하지 않고 동일한 주소를 사용
 		
 		//StringPool : 동일한 문자열 존재 불가
 		System.out.println(str1 == str2); //true(주소값이 일치한다)

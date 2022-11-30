@@ -49,8 +49,6 @@ public class MathRun {
 		 *  
 		 * 모든게 다 static이기 때문에 Math.필드 or Math.메서드명으로 다 접근 가능(객체생성할 필요가 없음)
 		 * Math 클래스의 생성자가 private이다. (객체생성불가)
-		 * 
-		 * 
 		 */
 	}
 
