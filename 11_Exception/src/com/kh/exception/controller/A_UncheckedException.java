@@ -27,6 +27,7 @@ public class A_UncheckedException {
 	public void method1() {
 		
 		//ArithmeticException : 나누기 연산시 0으로 나눌때 발생하는 예외.
+		
 		//사용자에게 두개의 정수값을 입력받아 나눗셈 연산 결과 출력
 		System.out.print("첫번째 정수 : ");
 		int num1 = sc.nextInt();
@@ -113,9 +114,9 @@ public class A_UncheckedException {
 			System.out.println("100번 인덱스의 값 : " + arr[100]);
 			
 		} catch(NegativeArraySizeException e) { // 다형성을 적용하여 부모타입의 예외클래스 작성 가능.
-			System.out.println("예외가 발생했습니다. 배열의 크기를 음수로 입력했거나 부적절한 인덱스로 접근한 것 같습니다.");
-		} catch(RuntimeException e) {
 			System.out.println("배열의 크기를 음수로 지정할 수 없습니다.");
+		} catch(RuntimeException e) {
+			System.out.println("예외가 발생했습니다. 배열의 크기를 음수로 입력했거나 부적절한 인덱스로 접근한 것 같습니다.");
 		} // 다중 catch에서는 블럭의 순서가 중요함. => 범위가 작은 자식타입의 예외클래스를 먼저 기술해야함.
 	}
 	
