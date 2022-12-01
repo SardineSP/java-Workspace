@@ -78,7 +78,13 @@ public class FileByteDao {
 //			fis.read();
 //			fis.read();
 //			fis.read();
+//			fis.read();   => 이걸로 하면 왜 안될까?
 //			fis.read();
+//			fis.read();
+//			fis.read();
+//			fis.read();
+//			fis.read();
+			
 			
 			//방법 1
 //			while(true) {
