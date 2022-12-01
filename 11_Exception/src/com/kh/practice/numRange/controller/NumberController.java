@@ -11,5 +11,6 @@ public class NumberController {
 			return true;
 		}
 		return false;
-	}
+	}throws new NumRangeException
+	
 }
