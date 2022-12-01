@@ -6,8 +6,8 @@ public class BufferedRun {
 
 	public static void main(String[] args) {
 		BufferedDao bd = new BufferedDao();
-		//bd.fileSave();
-		bd.fileRead();
+		bd.fileSave();
+		//bd.fileRead();
 	}
 
 }

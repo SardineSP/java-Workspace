@@ -74,16 +74,18 @@ public class FileByteDao {
 			
 			//2. 통로로 데이터입력받기 read() 사용.
 			// 단, 1byte 단위로 하나씩 읽어옴
-//			fis.read();
-//			fis.read();
-//			fis.read();
-//			fis.read();
-//			fis.read();   => 이걸로 하면 왜 안될까?
-//			fis.read();
-//			fis.read();
-//			fis.read();
-//			fis.read();
-//			fis.read();
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read());
+			System.out.println(fis.read()); // 파일 끝을 만나는 순간 -1
+			System.out.println(fis.read());
 			
 			
 			//방법 1
