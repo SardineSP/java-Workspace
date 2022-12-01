@@ -48,9 +48,5 @@ public class B_CheckedException {
 	 *RuntimeException		프로그램 실행 시 => 런타임 에러(컴파일 에러x) 		필수 아님 -> unchecked Exception(조건문 또는 예외처리구문 사용)
 	 *IOException		그외			 => 컴파일 에러						필수 -> checked Exception(반드시 예외처리로 해결)
 	 * 
-	 * 
-	 * 
-	 * 
-	 * 
 	 */
 }

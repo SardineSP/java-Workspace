@@ -3,7 +3,7 @@ package com.kh.exception.controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class A_UncheckedException {
+public class A_UncheckedException { //체크를 안해도 되는 오류
 	
 	/*
 	 * RuntimeException
