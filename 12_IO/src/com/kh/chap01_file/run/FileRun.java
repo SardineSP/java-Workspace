@@ -1,4 +1,4 @@
-package com.kh.chap01_file.run;
+ package com.kh.chap01_file.run;
 
 import java.io.File;
 import java.io.IOException;
