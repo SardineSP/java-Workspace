@@ -17,7 +17,7 @@ public class Run {
 		
 		// 우선순위 변경 전
 		// 스레드는 기본적으로 1~10의 우선순위 중 5의 우선순위를 가지고 있습니다.
-		// 메모리가 모자랄때 우선순위를 정할 수 있음.
+		// "메모리가 모자랄때" 우선순위를 정할 수 있음.
 		// 스레드의 우선순위를 정하지않으면 OS(운영체제)가 임의로 수행시킨다.
 		System.out.println("======= 우선순위 변경 전 =======");
 		System.out.println(Thread.currentThread().getName() + "의 우선순위" + Thread.currentThread().getPriority());
