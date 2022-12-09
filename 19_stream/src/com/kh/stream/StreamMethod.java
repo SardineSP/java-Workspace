@@ -51,6 +51,48 @@ public class StreamMethod {
 		arr2.stream()
 			.flatMap(food -> Arrays.stream(food.split(" ")))
 			.forEach(System.out :: println);
+		
+		System.out.println("========");
+		
+		// 3_3) asXXXStream(), boxed() : 형변환 관련 메서드
+		int [] iArr = {1,3,5,7,9};
+		
+		//double로 형변환하여 출력
+		Arrays.stream(iArr)
+			.asDoubleStream()
+			.forEach(System.out :: println);
+		
+		Arrays.stream(iArr)
+			.boxed()
+			.forEach( i -> System.out.println(i.hashCode() + " ")); //hashCode() -> 원래는 주소값을 10진수로, Integer에서는 값 자체를 출력
+		
+		// 4) sorted() : 정렬
+		
+		// 5) 루프메서드 : 
+		// 5_1) forEach : 최종처리 스트림 -> 마지막에 호출해야 정상적으로 작동함 (3_3 사례 참고
+		// 5_2) peek    : 중간처리 메서드, 중간에 호출해야 정상작동함.
+		
+		System.out.println("----- peek -----");
+		arr.stream()
+			.distinct()
+			.filter(food -> food.length() == 3)
+			.peek(food -> System.out.println("남아있는 음식은 ?? " + food))
+			.forEach(System.out :: println);
+		
+		/*
+		 * 6) 집계함수들
+		 * 	스트림의 마지막에 사용한다.
+		 * 	count() : 개수를 반환.
+		 * 	sum() : 합계를 반환.
+		 * 	max() : 최대값 반환.
+		 *  min() : 최소값 반환.	
+		 * 
+		 * 7) 그외~
+		 * 	findFirst() : 스트림의 첫번째요소 반환.
+		 * 	findAny() : 스트림에 값이 있다면 아무값이나 반환
+		 * 	orElse(대체값) : 값이 저장되어있지 않다면 대체값 설정가능
+		 * 
+		 */
 	}
 	
 	
